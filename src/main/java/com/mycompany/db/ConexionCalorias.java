@@ -67,6 +67,22 @@ public final class ConexionCalorias {
         }
     }
 
+    /** Actualiza un registro existente usando su id. */
+    public static void actualizar(RegistroCalorias r) throws SQLException {
+        String sql = "UPDATE calorias SET tipo=?, alimento=?, cantidad=?, "
+                + "preparacion=?, calorias=? WHERE id=?";
+        try (Connection c = getConnection();
+             PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, r.getTipo());
+            ps.setString(2, r.getAlimento());
+            ps.setInt(3, r.getCantidad());
+            ps.setString(4, r.getPreparacion());
+            ps.setDouble(5, r.getCalorias());
+            ps.setInt(6, r.getId());
+            ps.executeUpdate();
+        }
+    }
+
     public static List<RegistroCalorias> listar() throws SQLException {
         String sql = "SELECT id, tipo, alimento, cantidad, preparacion, calorias "
                 + "FROM calorias ORDER BY id";
