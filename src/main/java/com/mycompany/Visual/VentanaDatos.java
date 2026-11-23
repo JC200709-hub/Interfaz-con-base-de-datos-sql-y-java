@@ -105,37 +105,31 @@ public class VentanaDatos extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
         TipoComida.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        TipoComida.setForeground(new java.awt.Color(235, 240, 245));
         TipoComida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Carbohidratos", "Proteinas", "Lacteos y grasas", " " }));
         TipoComida.addActionListener(this::TipoComidaActionPerformed);
         jPanel1.add(TipoComida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 150, 40));
 
         Comida.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        Comida.setForeground(new java.awt.Color(235, 240, 245));
         Comida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         Comida.setSelectedIndex(-1);
         Comida.addActionListener(this::ComidaActionPerformed);
         jPanel1.add(Comida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 150, 40));
 
         TipoPreparacion.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        TipoPreparacion.setForeground(new java.awt.Color(235, 240, 245));
         TipoPreparacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Crudo", "Hervido", "Asado", "Frito" }));
         jPanel1.add(TipoPreparacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 150, 40));
 
         Cantidad.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        Cantidad.setForeground(new java.awt.Color(235, 240, 245));
         Cantidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "50", "100", "150", "200", "250", "300", "500" }));
         Cantidad.setSelectedIndex(1);
         jPanel1.add(Cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 150, 40));
 
         BaseDatos.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BaseDatos.setForeground(new java.awt.Color(235, 240, 245));
         BaseDatos.setText("Base de datos");
         BaseDatos.addActionListener(this::BaseDatosActionPerformed);
         jPanel1.add(BaseDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 151, 39));
 
         Continuar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        Continuar.setForeground(new java.awt.Color(235, 240, 245));
         Continuar.setText("Guardar ");
         Continuar.addActionListener(this::ContinuarActionPerformed);
         jPanel1.add(Continuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, 151, 39));
