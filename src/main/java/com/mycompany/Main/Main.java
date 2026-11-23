@@ -1,13 +1,13 @@
 package com.mycompany.Main;
-import com.mycompany.Visual.VentanaPrincipal;
+import com.mycompany.Visual.VentanaDatos;
 import javax.swing.JFrame;
 
 public class Main {
     public static void main(String[] args) {
-        VentanaPrincipal Vent1 = new VentanaPrincipal();
-        Vent1.setVisible(true);
-        Vent1.setLocationRelativeTo(null);
-        Vent1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
-        Vent1.setResizable(false);
+        VentanaDatos Vent2 = new VentanaDatos();
+        Vent2.setVisible(true);
+        Vent2.setLocationRelativeTo(null);
+        Vent2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
+        Vent2.setResizable(false);
     }
 }
